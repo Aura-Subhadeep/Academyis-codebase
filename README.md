@@ -17,7 +17,7 @@ The Learning Management Platform is a Next.js application designed to streamline
 
 ## Features
 
-- **User Authentication:** Secure user authentication using JWT tokens with [Clerk](https://clerk.dev/).
+- **User Authentication:** Secure user authentication using JWT tokens with Clerk.
 - **Course Management:** Create, update, and delete courses with ease.
 - **Assignment Tracking:** Manage assignments, track submissions, and provide feedback.
 - **User Dashboard:** A personalized dashboard for students and instructors.
