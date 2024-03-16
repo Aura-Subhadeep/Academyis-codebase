@@ -1,78 +1,93 @@
-# Learning Management Platform
+# Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
 
-Welcome to the Learning Management Platform, a comprehensive system developed for educational institutions to manage courses, students, and resources efficiently.
+![Copy of Copy of Copy of Copy of Fullstack Twitter Clone (9)](https://github.com/AntonioErdeljac/next13-lms-platform/assets/23248726/fa077fca-bb74-419a-84de-54ac103bb026)
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [License](#license)
 
-## Introduction
+This is a repository for Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
 
-The Learning Management Platform is a Next.js application designed to streamline the management of courses, assignments, and student data. It provides a user-friendly interface for both students and administrators, facilitating an effective learning environment.
+[VIDEO TUTORIAL](https://www.youtube.com/watch?v=Big_aFLmekI)
 
-## Features
+Key Features:
 
-- **User Authentication:** Secure user authentication using JWT tokens with Clerk.
-- **Course Management:** Create, update, and delete courses with ease.
-- **Assignment Tracking:** Manage assignments, track submissions, and provide feedback.
-- **User Dashboard:** A personalized dashboard for students and instructors.
-- **Responsive Design:** Utilizes Tailwind CSS for a mobile-friendly and responsive layout.
-- **Media Handling:** Mux integration for efficient video hosting and streaming.
-- **Database:** MySQL database with Prisma ORM for data persistence.
-- **Scalability:** Planetscale for managing and scaling the database.
+- Browse & Filter Courses
+- Purchase Courses using Stripe
+- Mark Chapters as Completed or Uncompleted
+- Progress Calculation of each Course
+- Student Dashboard
+- Teacher mode
+- Create new Courses
+- Create new Chapters
+- Easily reorder chapter position with drag n’ drop
+- Upload thumbnails, attachments and videos using UploadThing
+- Video processing using Mux
+- HLS Video player using Mux
+- Rich text editor for chapter description
+- Authentication using Clerk
+- ORM using Prisma
+- MySQL database using Planetscale
 
-## Technologies Used
+### Prerequisites
 
-- [Next.js 13](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [ShaderCanvas](https://github.com/solana-labs/shadcn)
-- [MySQL](https://www.mysql.com/)
-- [Prisma](https://www.prisma.io/)
-- [Planetscale](https://planetscale.com/)
-- [Mux](https://mux.com/)
-- [Clerk](https://clerk.dev/)
+**Node version 18.x.x**
 
-## Installation
+### Cloning the repository
 
-1. Clone the repository:
-   
-   ```bash
-   git clone https://github.com/your-username/learning-management-platform.git
+```shell
+git clone https://github.com/AntonioErdeljac/next13-lms-platform.git
+```
 
-2. Navigate to the project directory:
-   
-   ```bash
-    cd learning-management-platform
+### Install packages
 
-3. Install dependencies:
-   
-   ```bash
-   npm install
+```shell
+npm i
+```
 
-## Configuration
+### Setup .env file
 
-1. Set up a MySQL & Planetscale database and configure the connection in the .env file.
-2. Obtain API keys for Mux and Planetscale and add them to the .env file.
-3. Configure Clerk by adding your API key and other required information to the .env file.
-4. Run Prisma migrations:
-   
-   ```bash
-   npx prisma generate
-   
-   npx prisma db push
 
-## Usage
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
 
-1. Start the development server:
-   
-    ```bash
-    npm run dev
-3. Explore the Learning Management Platform and its features.
+DATABASE_URL=
 
-## License
-This project is licensed under the MIT License.
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+
+MUX_TOKEN_ID=
+MUX_TOKEN_SECRET=
+
+STRIPE_API_KEY=
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+STRIPE_WEBHOOK_SECRET=
+
+NEXT_PUBLIC_TEACHER_ID=
+```
+
+### Setup Prisma
+
+Add MySQL Database (I used PlanetScale)
+
+```shell
+npx prisma generate
+npx prisma db push
+
+```
+
+### Start the app
+
+```shell
+npm run dev
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
