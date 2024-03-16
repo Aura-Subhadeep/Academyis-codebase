@@ -17,6 +17,8 @@ export const NavbarRoutes = () => {
   const isTeacherPage = pathname?.startsWith("/teacher");
   const isCoursePage = pathname?.includes("/courses");
   const isSearchPage = pathname === "/search";
+  const isDashboardPage = pathname === "/"; // Check if current page is the dashboard ("/") page
+
 
   return (
     <>
@@ -25,7 +27,10 @@ export const NavbarRoutes = () => {
           <SearchInput />
         </div>
       )}
-      <div className="flex gap-x-2 ml-auto">
+      {isDashboardPage && ( // Show heading only on the dashboard page
+        <h1 className="hidden md:block font-bold text-2xl px-2">Dashboard</h1>
+      )}
+      <div className="flex gap-x-4 mr-2.5 ml-auto">
         {isTeacherPage || isCoursePage ? (
           <Link href="/">
             <Button size="sm" variant="ghost">
@@ -35,8 +40,8 @@ export const NavbarRoutes = () => {
           </Link>
         ) : isTeacher(userId) ? (
           <Link href="/teacher/courses">
-            <Button size="sm" variant="ghost">
-              Teacher mode
+            <Button className="border" size="sm" variant="ghost">
+              Advance
             </Button>
           </Link>
         ) : null}
