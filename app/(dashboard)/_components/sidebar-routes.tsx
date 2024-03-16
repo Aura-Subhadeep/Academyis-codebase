@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart, Home, List, Airplay, MessageCircle, Settings, PieChart} from "lucide-react";
+import { BarChartBig, Home, LineChart, Airplay, MessageCircle, Settings, PieChart} from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { SidebarItem } from "./sidebar-item";
@@ -35,12 +35,12 @@ const guestRoutes = [
 
 const teacherRoutes = [
   {
-    icon: List,
+    icon: Airplay,
     label: "Courses",
     href: "/teacher/courses",
   },
   {
-    icon: BarChart,
+    icon: BarChartBig,
     label: "Analytics",
     href: "/teacher/analytics",
   },

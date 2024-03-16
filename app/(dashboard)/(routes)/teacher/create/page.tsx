@@ -103,7 +103,7 @@ const CreatePage = () => {
         </Form>
       </div>
     </div>
-   );
+  );
 }
- 
+
 export default CreatePage;

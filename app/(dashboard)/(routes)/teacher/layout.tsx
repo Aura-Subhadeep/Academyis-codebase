@@ -15,5 +15,5 @@ const TeacherLayout = ({
 
   return <>{children}</>
 }
- 
+
 export default TeacherLayout;
