@@ -23,12 +23,12 @@ const AnalyticsPage = async () => {
     <div className="p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <DataCard
-          label="Total Revenue"
+          label="Total Students"
           value={totalRevenue}
           shouldFormat
         />
         <DataCard
-          label="Total Sales"
+          label="Total viewerships"
           value={totalSales}
         />
       </div>
@@ -36,7 +36,7 @@ const AnalyticsPage = async () => {
         data={data}
       />
     </div>
-   );
+  );
 }
- 
+
 export default AnalyticsPage;
