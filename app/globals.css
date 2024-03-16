@@ -71,7 +71,13 @@ body,
     --ring: 212.7 26.8% 83.9%;
   }
 }
- 
+
+.black-gb {
+  background-color: #1b1b1b;
+}
+.rounded-custom {
+  border-radius: 0.9rem;
+}
 @layer base {
   * {
     @apply border-border;
