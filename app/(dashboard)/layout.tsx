@@ -18,7 +18,7 @@ const DashboardLayout = ({
         {children}
       </main>
     </div>
-   );
+  );
 }
- 
+
 export default DashboardLayout;

@@ -91,4 +91,14 @@ body,
   font-size: 16px !important;
 }
 
+.icon-bg{
+  background-color: #ebebeb;
+}
+
+.bg-white{
+  background-color: #ffff;
+}
+
+
+
 @import "~@uploadthing/react/styles.css"
