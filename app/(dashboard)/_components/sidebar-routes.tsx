@@ -19,17 +19,17 @@ const guestRoutes = [
   {
     icon: MessageCircle,
     label: "Chat",
-    href: "/profile",
+    href: "/chat",
   },
   {
     icon: PieChart,
     label: "Grades",
-    href: "/analytics",
+    href: "/grades",
   },
   {
     icon: Settings,
     label: "Settings",
-    href: "/courses",
+    href: "/settings",
   }
 ];
 
