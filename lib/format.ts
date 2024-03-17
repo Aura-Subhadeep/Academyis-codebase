@@ -1,6 +1,9 @@
-export const formatPrice = (price: number) => {
-  return new Intl.NumberFormat("en-US", {
+export const formatPrice = (price: number): string => {
+  const formattedPrice = new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD"
-  }).format(price)
-}
+    currency: "INR"
+  }).format(price);
+
+  // Remove decimal points and trailing zeros if the price is a whole number
+  return formattedPrice.replace(/\.00$/, "");
+};

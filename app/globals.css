@@ -95,8 +95,16 @@ body,
   background-color: #ebebeb;
 }
 
+.card-bg{
+  background-color: rgb(211 211 211);
+}
+
 .bg-white{
   background-color: #ffff;
+}
+
+.banner-bg{
+  background-color: #f1e4e9;
 }
 
 .text-2lx{
