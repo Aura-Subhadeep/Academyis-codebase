@@ -5,6 +5,7 @@ import { getAnalytics } from "@/actions/get-analytics";
 
 import { DataCard } from "./_components/data-card";
 import { Chart } from "./_components/chart";
+import Image from "next/image";
 
 const AnalyticsPage = async () => {
   const { userId } = auth();
@@ -23,7 +24,7 @@ const AnalyticsPage = async () => {
     <div className="p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <DataCard
-          label="Total Students"
+          label="Total revenue"
           value={totalRevenue}
           shouldFormat
         />

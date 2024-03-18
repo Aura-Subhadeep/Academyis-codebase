@@ -2,7 +2,7 @@
 
 import { UserButton, useAuth } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
-import { LogOut } from "lucide-react";
+import { LogOut,BellPlus } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -36,7 +36,8 @@ export const NavbarRoutes = () => {
       {isTeacherPage && ( // Show heading only on the dashboard page
         <h1 className="hidden md:block font-bold text-2lx px-2">My Courses</h1>
       )}
-      <div className="flex gap-x-4 mr-2.5 ml-auto">
+      <div className="flex gap-x-6 mr-2.5 ml-auto items-center">
+        <button className="p-1.5 px-2 icon-bg rounded-full"><BellPlus size={24} color="currentColor" className="inline-block" /></button>
         {isTeacherPage || isCoursePage ? (
           <Link href="/">
             <Button className="border rounded-lg bg-black hover:bg-gray-800 text-white hover:text-gray-200" size="sm" variant="ghost">
