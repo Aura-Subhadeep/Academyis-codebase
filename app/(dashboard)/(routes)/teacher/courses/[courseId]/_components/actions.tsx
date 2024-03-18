@@ -63,7 +63,7 @@ export const Actions = ({
   }
 
   return (
-    <div className="flex items-center gap-x-2">
+    <div className="flex items-center gap-x-5">
       <Button
         onClick={onClick}
         disabled={disabled || isLoading}
