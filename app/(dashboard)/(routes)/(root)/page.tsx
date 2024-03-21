@@ -58,7 +58,7 @@ export default async function Dashboard() {
         </div>
       <div className="p-6">
         <a href="">
-          <Image src="/img3.jpeg" alt="image" width={800} height={800} />
+          <Image src="/img3.jpeg" alt="image" width={700} height={700} />
         </a>
       </div>
     </>
