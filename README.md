@@ -33,32 +33,20 @@ The Learning Management Platform is a Next.js application designed to streamline
 - [ShaderCanvas](https://github.com/solana-labs/shadcn)
 - [MySQL](https://www.mysql.com/)
 - [Prisma](https://www.prisma.io/)
-- [Planetscale](https://planetscale.com/)
+- [Neon DB](https://planetscale.com/)
 - [Mux](https://mux.com/)
 - [Clerk](https://clerk.dev/)
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/learning-management-platform.git
-
-2. Navigate to the project directory:
-
-   ```bash
-    cd learning-management-platform
-3. Install dependencies:
-   
-   ```bash
-   npm install
 
 ## Configuration
 
 1. Set up a MySQL & Planetscale database and configure the connection in the .env file.
-2. Obtain API keys for Mux and Planetscale and add them to the .env file.
+2. Obtain API keys for Mux and Neon DB and add them to the .env file.
 3. Configure Clerk by adding your API key and other required information to the .env file.
-4. Run Prisma migrations:
+4. Install dependencies:
+   
+   ```bash
+   npm install
+5. Run Prisma migrations:
 
    ```bash
    npx prisma generate
