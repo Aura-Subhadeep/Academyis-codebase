@@ -43,7 +43,7 @@ export default async function Dashboard() {
               Calendar
               </p>
               <p className="text-gray-500 text-sm">
-              March 27, 2024
+              May 22, 2024
               </p>
             </div>
           </div>
